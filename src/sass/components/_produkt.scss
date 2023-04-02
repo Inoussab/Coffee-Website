@@ -1,0 +1,32 @@
+.produkt {
+  width: 45%;
+
+  &__img {
+    width: 100%;
+    background-color: $color-white;
+  }
+
+  &__name {
+    margin-top: 1.1rem;
+  }
+
+  &__preis {
+    color: $color-gray;
+  }
+
+  &__icon {
+    filter: brightness(0) invert(1);
+    margin-top: 0.5rem;
+    margin-right: 6px;
+    width: 1.2rem;
+    height: 1.4rem;
+  }
+
+  @include respond(desktop) {
+    width: 24%;
+    &__icon {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

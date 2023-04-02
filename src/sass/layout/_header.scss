@@ -1,0 +1,72 @@
+.header {
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &-home {
+        height: 75vh;
+        background-image: linear-gradient(0deg, rgba($color-black, .3), rgba($color-black, .3)), url(../img/coffee.png);
+        color: $color-white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    &-cafe {
+        height: 50vh;
+        background-image: linear-gradient(0deg, rgba($color-black, .3), rgba($color-black, .3)), url(../../img/shop.png);
+
+        @include respond(desktop) {
+            height: 65vh;
+        }
+    }
+
+    &-herkunft {
+        height: 50vh;
+        background-image: linear-gradient(0deg, rgba($color-black, .3), rgba($color-black, .3)), url(../../img/coffee-beans-hand-.png);
+
+        @include respond(desktop) {
+            height: 65vh;
+        }
+    }
+
+}
+
+//////////////////
+/// HEADER NAVIGATION
+.header__navi {
+    position: absolute; 
+    top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2.4rem;
+
+    @include respond(desktop) {
+        padding: 0 10rem;
+    }
+}
+
+.header__logo{
+    height: 3.5rem;
+    width: 3.5rem;
+    @include icon-white;
+}
+
+.header__menu {
+    width: 2.35rem;
+    height: 1.25rem;
+    @include icon-white;
+
+    @include respond(desktop) {
+        display: none;
+    }
+}
+
+.icon-black {
+    filter: brightness(0);
+}

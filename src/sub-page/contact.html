@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Website</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oregano"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header__navi">
+      <a href="../index.html"
+        ><img src="../img/Logo.svg" alt="Logo" class="header__logo icon-black"
+      /></a>
+
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <img
+          src="../img/Burger Menu.svg"
+          alt="menu icon"
+          class="header__menu icon-black"
+        />
+      </label>
+
+      <div class="navigation">
+        <label for="navi-toggle" class="navigation__button">
+          <img
+            src="../img/CloseMenu.svg"
+            alt="close"
+            class="navigation__close-icon"
+          />
+        </label>
+
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="../sub-page/cafe.html" class="navigation__link"
+                >das Café</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="../sub-page/herkunft.html" class="navigation__link">
+                Herkunft</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="../sub-page/shop.html" class="navigation__link">Shop</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="navigation__desktop">
+        <ul class="navigation__desktop-list">
+          <li class="navigation__desktop-item">
+            <a
+              href="../sub-page/cafe.html"
+              class="navigation__desktop-link icon-black"
+              >das Café</a
+            >
+          </li>
+          <li class="navigation__desktop-item">
+            <a
+              href="../sub-page/herkunft.html"
+              class="navigation__desktop-link border icon-black"
+            >
+              Herkunft</a
+            >
+          </li>
+          <li class="navigation__desktop-item">
+            <a
+              href="../sub-page/shop.html"
+              class="navigation__desktop-link border icon-black"
+              >Shop</a
+            >
+          </li>
+          <li class="navigation__desktop-item">
+            <a href="#" class="navigation__desktop-link icon-black"
+              ><img src="../img/bag.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="contact-page">
+      <h2 class="u-margin-big">Du hast Fragen? Schreib uns gern!</h2>
+
+      <form action="#" class="form">
+        <div class="contact">
+          <label for="name" class="contact__label">Name*</label>
+          <input
+            type="text"
+            placeholder="Name"
+            id="name"
+            class="contact__input"
+            required
+          />
+
+          <label for="name">E-mail*</label>
+          <input
+            type="email"
+            placeholder="E-mail"
+            id="mail"
+            class="contact__input"
+            required
+          />
+
+          <label for="name">Telefonnummer</label>
+          <input
+            type="number"
+            placeholder="Telefonnummer"
+            id="nummer"
+            class="contact__input"
+            required
+          />
+        </div>
+
+        <div class="popup-menu">
+          <div class="popup-menu__view">Dein Betreff</div>
+          <div class="popup-menu__view--desktop">Wähle einen Betreff aus</div>
+
+          <input
+            type="checkbox"
+            id="popup-toggle"
+            class="popup-menu__checkbox"
+          />
+
+          <label for="popup-toggle" class="popup-menu__button">
+            <span class="popup-menu__icon"> &nbsp; </span>
+          </label>
+
+          <div class="popup-menu__options">
+            <ul class="popup-menu__list">
+              <li class="popup-menu__item">
+                <a href="#" class="popup-menu__link">Fragen zur Lieferung</a>
+              </li>
+              <li class="popup-menu__item">
+                <a href="#" class="popup-menu__link">Fragen zum Produkt</a>
+              </li>
+              <li class="popup-menu__item">
+                <a href="#" class="popup-menu__link">Vertriebsfragen</a>
+              </li>
+              <li class="popup-menu__item">
+                <a href="#" class="popup-menu__link">einfach nur so!</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="message">
+          <label for="message">Deine Nachricht</label>
+          <textarea
+            name="message"
+            id="message"
+            type="text"
+            placeholder="Was hast du auf dem Herzen?"
+            class="message__box"
+          ></textarea>
+        </div>
+
+        <div class="datenschutz">
+          <div class="datenschutz__form">
+            <input
+              type="checkbox"
+              id="datenschutz"
+              required
+              class="datenschutz-box"
+            />
+            <label for="datenschutz"
+              >Ich aktzeptiere die Datenschutzerklärung</label
+            >
+          </div>
+
+          <a href="#" class="btn shop-btn"> abschicken </a>
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <img src="../img/Logo.svg" alt="Logo" class="footer__logo" />
+
+      <div class="footer__box">
+        <div class="footer__heading-box">
+          <p class="footer__heading">Rustica</p>
+          <p class="footer__subheading">Café & Rösterei</p>
+        </div>
+
+        <div class="footer__info-box">
+          <p class="footer__adresse">
+            Komm uns besuchen!<br />Fraunhoferstr. 13, Kiel
+          </p>
+          <p class="footer__zeit">Mo – Fr 8–18 Uhr<br />Sa 11–18 Uhr</p>
+        </div>
+
+        <div class="footer__navi-box">
+          <ul class="footer__extra">
+            <li class="footer__item">
+              <a href="../sub-page/impressum.html" class="footer__link"
+                >Impressum</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Datenschutz</a>
+            </li>
+            <li class="footer__item">
+              <a href="../sub-page/contact.html" class="footer__link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <ul class="footer__navi">
+            <li class="footer__item">
+              <a href="../sub-page/cafe.html" class="footer__link">Café</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Shop</a>
+            </li>
+            <li class="footer__item">
+              <a href="../sub-page/herkunft.html" class="footer__link"
+                >Herkunft</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

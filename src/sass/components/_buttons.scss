@@ -1,0 +1,28 @@
+.btn {
+    display: inline-block;
+    color: $color-white;
+    text-align: center;
+    text-decoration: none;
+    background-color: $color-black;
+    border-radius: .5rem; 
+
+    align-self: center;
+}
+
+.shop-btn {
+    padding: 1.5rem 5rem;
+
+    &:hover{
+        background-color: $color-brown;
+    }
+    &:active{
+        background-color: $color-light-brown;
+    }
+}
+
+.produkt-btn {
+    border: .3rem solid $color-white;
+    padding: 1.5rem 4rem;
+    margin-left: 50%;
+    transform: translate(-50%);
+}

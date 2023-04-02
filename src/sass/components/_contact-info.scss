@@ -1,0 +1,28 @@
+.contact {
+    
+    &__input {
+        width: 100%;
+        margin-bottom: 4rem;
+        padding: 1rem 2rem;
+        font-family: inherit;
+        font-size: inherit;
+        border: none;
+        border-bottom: 3px solid $color-black;
+        color: $color-gray-light1;;
+
+        &:focus {
+            outline: none;
+            color: $color-black;
+            background-color: $color-gray-light2;
+        }
+
+        &:focus:invalid {
+            background-color: $color-red-dark;
+            color: $color-red-light;
+        }
+
+        @include respond(desktop) {
+            margin-bottom: 8rem;
+        }
+    }
+}

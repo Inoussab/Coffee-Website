@@ -1,0 +1,135 @@
+.popup-menu {
+  position: relative;
+  margin-bottom: 4rem;
+
+  &__view {
+    background-color: $color-black;
+    color: $color-white;
+    padding: 1.5rem 2.5rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(desktop) {
+      display: none;
+    }
+  }
+
+  &__view--desktop {
+    display: none;
+    @include respond(desktop) {
+      background-color: $color-white;
+      color: $color-gray;
+      border: solid 2px $color-black;
+      padding: 1.5rem 2.5rem;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__options {
+    width: 100%;
+    border: 2px solid $color-black;
+    border-radius: 5px;
+    margin-top: 3px;
+    transform: scaleY(0);
+    transform-origin: top;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+  }
+
+  &__checkbox:checked ~ &__options {
+    transform: scaleY(1);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    padding: 0.8rem 2.3rem;
+
+    &:hover {
+      background-color: $color-gray-light1;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-black;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    height: 5rem;
+    width: 5rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    @include respond(desktop) {
+      background-color: $color-black;
+      height: 5.8rem;
+    }
+  }
+
+  &__icon {
+    position: relative;
+
+    &::before,
+    &::after {
+      background-color: $color-white;
+      height: 15px;
+      width: 3px;
+      transition: all 0.1s;
+    }
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 15px;
+      left: 19px;
+      transform: rotate(-52deg);
+
+      @include respond(desktop) {
+        top: 22px;
+      }
+    }
+
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 15px;
+      left: 29px;
+      transform: rotate(52deg);
+
+      @include respond(desktop) {
+        top: 22px;
+      }
+    }
+  }
+
+  &__checkbox:checked ~ &__button &__icon::before {
+    transform: rotate(-128deg);
+  }
+
+  &__checkbox:checked ~ &__button &__icon::after {
+    transform: rotate(128deg);
+  }
+
+  @include respond(desktop) {
+    margin-bottom: 8rem;
+  }
+}

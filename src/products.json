@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "productName": "Costa Rica",
+    "minPrice": 6.9,
+    "maxPrice": 26.9
+  },
+  {
+    "id": 1,
+    "productName": "Costa Rica",
+    "minPrice": 6.9,
+    "maxPrice": 26.9
+  },
+  {
+    "id": 2,
+    "productName": "Costa Rica",
+    "minPrice": 6.9,
+    "maxPrice": 26.9
+  },
+  {
+    "id": 3,
+    "productName": "Costa Rica",
+    "minPrice": 6.9,
+    "maxPrice": 26.9
+  },
+  {
+    "id": 4,
+    "productName": "Costa Rica",
+    "minPrice": 6.9,
+    "maxPrice": 26.9
+  },
+  {
+    "id": 5,
+    "productName": "Costa Rica",
+    "minPrice": 6.9,
+    "maxPrice": 26.9
+  },
+  {
+    "id": 6,
+    "productName": "Costa Rica",
+    "minPrice": 6.9,
+    "maxPrice": 26.9
+  },
+  {
+    "id": 7,
+    "productName": "Costa Rica",
+    "minPrice": 6.9,
+    "maxPrice": 26.9
+  }
+]

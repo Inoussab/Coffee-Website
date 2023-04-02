@@ -1,0 +1,11 @@
+// 1em = 16px
+
+@mixin respond($brakpoint) {
+    @if $brakpoint == desktop {
+        @media (min-width: 62em) {@content};       //992px 
+    }
+}
+
+@mixin icon-white {
+    filter: brightness(0) invert(1);
+}

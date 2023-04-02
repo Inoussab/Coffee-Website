@@ -1,0 +1,31 @@
+.section-frisches {
+    padding: 0 2.4rem 4.8rem 2.4rem;
+
+    @include respond(desktop) {
+        padding: 0 0 12.5rem 0;
+    }
+}
+
+
+//short image: width = 1 = width * 0.9
+//long image:  width = 1 = width * 1.7
+
+.section-galerie {
+    padding: 0 2.5rem;
+    margin-bottom: 6rem;
+    width: 100%;
+    // heigh galerie = 3 * 20px + 2 * heigh short image + 2 * heigh long image
+
+    // !!! $mobile-img-width funtioniert nicht
+    height: calc(3 * 1.5rem + 2 * (calc((100vw - 6.5rem) / 2)) * .75 + 2 * (calc((100vw - 6.5rem) / 2)) * 1.35 );
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    @include respond(desktop) {
+        padding: 0 10rem;
+        margin-bottom: 12.5rem;
+        height: calc(2rem + (calc((100vw - 24.5rem) / 4)) * .75 + (calc((100vw - 24.5rem) / 4)) * 1.35 );
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Website</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oregano"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header__navi">
+      <a href="../index.html"
+        ><img src="../img/Logo.svg" alt="Logo" class="header__logo icon-black"
+      /></a>
+
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <img
+          src="../img/Burger Menu.svg"
+          alt="menu icon"
+          class="header__menu icon-black"
+        />
+      </label>
+
+      <div class="navigation">
+        <label for="navi-toggle" class="navigation__button">
+          <img
+            src="../img/CloseMenu.svg"
+            alt="close"
+            class="navigation__close-icon"
+          />
+        </label>
+
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="../sub-page/cafe.html" class="navigation__link"
+                >das Café</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="../sub-page/herkunft.html" class="navigation__link">
+                Herkunft</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="../sub-page/shop.html" class="navigation__link">Shop</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="navigation__desktop">
+        <ul class="navigation__desktop-list">
+          <li class="navigation__desktop-item">
+            <a
+              href="../sub-page/cafe.html"
+              class="navigation__desktop-link icon-black"
+              >das Café</a
+            >
+          </li>
+          <li class="navigation__desktop-item">
+            <a
+              href="../sub-page/herkunft.html"
+              class="navigation__desktop-link border icon-black"
+            >
+              Herkunft</a
+            >
+          </li>
+          <li class="navigation__desktop-item">
+            <a
+              href="../sub-page/shop.html"
+              class="navigation__desktop-link border icon-black"
+              >Shop</a
+            >
+          </li>
+          <li class="navigation__desktop-item">
+            <a href="#" class="navigation__desktop-link icon-black"
+              ><img src="../img/bag.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="shop-page">
+      <h2>Entdecke unsere<br />Kaffee Sorten</h2>
+      <div id="shop"></div>
+      <script type="module" src="../js/index.js"></script>
+    </section>
+    <section class="section-map">
+      <h2 class="u-margin-littel-big l-margin">Komm vorbei</h2>
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=10.110576152801515%2C54.33704503323585%2C10.133965015411379%2C54.34661419706844&amp;layer=mapnik&amp;marker=54.34182989359351%2C10.122270584106445"
+        style="border: 1px solid black"
+      ></iframe>
+    </section>
+
+    <footer class="footer">
+      <img src="../img/Logo.svg" alt="Logo" class="footer__logo" />
+
+      <div class="footer__box">
+        <div class="footer__heading-box">
+          <p class="footer__heading">Rustica</p>
+          <p class="footer__subheading">Café & Rösterei</p>
+        </div>
+
+        <div class="footer__info-box">
+          <p class="footer__adresse">
+            Komm uns besuchen!<br />Fraunhoferstr. 13, Kiel
+          </p>
+          <p class="footer__zeit">Mo – Fr 8–18 Uhr<br />Sa 11–18 Uhr</p>
+        </div>
+
+        <div class="footer__navi-box">
+          <ul class="footer__extra">
+            <li class="footer__item">
+              <a href="../sub-page/impressum.html" class="footer__link"
+                >Impressum</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Datenschutz</a>
+            </li>
+            <li class="footer__item">
+              <a href="../sub-page/contact.html" class="footer__link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <ul class="footer__navi">
+            <li class="footer__item">
+              <a href="../sub-page/cafe.html" class="footer__link">Café</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Shop</a>
+            </li>
+            <li class="footer__item">
+              <a href="../sub-page/herkunft.html" class="footer__link"
+                >Herkunft</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
